@@ -14,11 +14,14 @@ def stock_analyst(stock_list):
     B = stock_list.index(min(stock_list))
     buy_value = min(stock_list)
 
-    S = -1
-    if buy_value < 1:
+    sell_value = -1
+    if buy_value > 1:
         for sell_indx in range(B, len(stock_list)):
-            if S < stock_list[sell_indx]:
+            if sell_value < stock_list[sell_indx]:
+                sell_value = stock_list[sell_indx]
                 S = sell_indx
+    else:
+        return 'Buy stock first'
     return [B, S]
 
 
