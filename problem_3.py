@@ -9,6 +9,7 @@ def temp_example(timestamp, reading, threshold):
         timestamp: accepts a list as a parameter
 
         reading: accepts a list as a parameter
+
     Returns:
         timestamp: yeilds the timestamp when the temperature was exceeded
     """
