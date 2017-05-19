@@ -11,14 +11,14 @@ def stock_analyst(stock_list):
         If the value of stock is > 0 it returns the best days to stock at
         value and sell stock at maximum value
     """
-    buy_date = stock_list.index(min(stock_list))
-    B = min(stock_list)
+    B = stock_list.index(min(stock_list))
+    buy_value = min(stock_list)
 
     S = -1
-    if B < 1:
-        for sell_indx in range(buy_date, len(stock_list)):
+    if buy_value < 1:
+        for sell_indx in range(B, len(stock_list)):
             if S < stock_list[sell_indx]:
-                S = stock_list[sell_indx]
+                S = sell_indx
     return [B, S]
 
 
