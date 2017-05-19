@@ -7,10 +7,10 @@ All the implementation are done with python. Though the questions can be impleme
 
 ####  Problem 1: String transformation (Python, JS)
 
-You are given a string S composed of characters A to Z, formulate a function that transforms a given string by changing each letter as follows: �a� becomes �z�, �b� becomes �y�, �c� becomes �x�, e.t.c
+You are given a string S composed of characters A to Z, formulate a function that transforms a given string by changing each letter as follows: a becomes z, b becomes y, c becomes x, e.t.c
 
 ##### Sample input
-`>> S = �acdz�`
+`>> S = acdz`
 
 ##### Sample output
 `>> zxwa`
@@ -23,14 +23,14 @@ You a given a string S of any length, formulate a function that splits the strin
 
 ##### Sample input
 ```
->> S = �This is a test�
+>> S = This is a test
 
 >> N = 3
 
 ```
 
 ##### Sample output
-`>> [�Thi�, �s i�, �s a�, � te�, �st�]`
+`>> [Thi, s i, s a,  te, st]`
 
 
 
@@ -88,7 +88,7 @@ Please copy the code into your answer, and adjust as you see fit.
 
 
 
-```
+```.py
 WALL_X = 5 # A vertical line on a 2D coordinate system at x = 5
 
 class Ball(object):
@@ -121,7 +121,7 @@ b.run()
 
 ##### Java
 
-```
+```.java
 public class Ball {
 
     public static int WALL_X = 5; // A vertical line on a 2D coordinate system at x = 5
@@ -162,3 +162,9 @@ public class Ball {
         b.run(50);
     }
 }
+
+#### Tests
+
+Tests are on `test_problems.py`
+
+
